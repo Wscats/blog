@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Store Location Selection: A Summary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 自定义动画 */
+       .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+       .slide-up {
+            animation: slideUp 1s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800">Starbucks Store Location Selection</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-gray-600 hover:text-gray-800 transition duration-300">Home</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-800 transition duration-300">About</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-800 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 英雄部分 -->
+    <section class="bg-blue-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4 slide-up">Starbucks' Strategic Store Location Selection</h2>
+            <p class="text-lg mb-8 fade-in">Unveiling the data-driven approach to precise decision-making in store expansion.</p>
+            <a href="#" class="bg-white text-blue-600 py-2 px-4 rounded-md hover:bg-gray-100 transition duration-300">Learn More</a>
+        </div>
+    </section>
+
+    <!-- 主要内容部分 -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- 全球咖啡市场与星巴克战略 -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 slide-up">Global Coffee Market and Starbucks' Strategy</h3>
+            <p class="text-gray-600 mb-4 fade-in">The global coffee market is growing steadily, with an average annual growth rate of 10%. Starbucks faces fierce competition from various brands. Precise store location selection is crucial for its expansion strategy.</p>
+        </section>
+
+        <!-- 数据收集 -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 slide-up">Data Collection</h3>
+            <p class="text-gray-600 mb-4 fade-in">Starbucks collects diverse data, including GIS data for geographical insights, consumer behavior data from online and offline sources, competitor data from business platforms, and government demographic data to understand the target consumer group.</p>
+        </section>
+
+        <!-- 数据分析技术 -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 slide-up">Data Analysis Technologies</h3>
+            <p class="text-gray-600 mb-4 fade-in">Advanced techniques such as the DBSCAN algorithm for spatial clustering, the random forest model for machine learning prediction, and confidence interval verification are employed to analyze data and uncover key factors for location selection.</p>
+        </section>
+
+        <!-- PACE框架下的选址模型 -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 slide-up">Location Selection Model Based on PACE Framework</h3>
+            <p class="text-gray-600 mb-4 fade-in">The PACE framework (Plan, Analyze, Construct, Execute) provides a systematic approach. Data preprocessing, feature engineering, model integration, and optimization are carried out to build an effective location selection model.</p>
+        </section>
+
+        <!-- 应对复杂场景和挑战 -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 slide-up">Coping with Complex Scenarios and Challenges</h3>
+            <p class="text-gray-600 mb-4 fade-in">Starbucks has strategies to deal with emerging business districts, dynamic market changes, special events like the pandemic, and long-term external factors through data-driven adjustments and early planning.</p>
+        </section>
+
+        <!-- 选址决策的实施和跟进评估 -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 slide-up">Implementation and Follow-up Evaluation of Location Selection Decisions</h3>
+            <p class="text-gray-600 mb-4 fade-in">A/B testing and dynamic monitoring are used to evaluate the effectiveness of location selection decisions. A comprehensive evaluation index system is established to ensure continuous optimization.</p>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-white shadow-md py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600">&copy; 2025 Starbucks Store Location Analysis. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="#" class="text-gray-600 hover:text-gray-800 mx-2 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800 mx-2 transition duration-300"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800 mx-2 transition duration-300"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+    
