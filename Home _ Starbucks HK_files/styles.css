@@ -1,0 +1,412 @@
+@font-face {
+  font-family: 'Magento-Icons';
+  src: url('../fonts/Magento-Icons/Magento-Icons.eot');
+  src: url('../fonts/Magento-Icons/Magento-Icons.eot?#iefix') format('embedded-opentype'), url('../fonts/Magento-Icons/Magento-Icons.woff2') format('woff2'), url('../fonts/Magento-Icons/Magento-Icons.woff') format('woff'), url('../fonts/Magento-Icons/Magento-Icons.ttf') format('truetype'), url('../fonts/Magento-Icons/Magento-Icons.svg#Magento-Icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.spinner {
+  display: inline-block;
+  font-size: 4rem;
+  height: 1em;
+  margin-right: 1.5rem;
+  position: relative;
+  width: 1em;
+}
+.spinner > span {
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  transform: scale(0.4);
+  -webkit-animation-name: fade;
+  -moz-animation-name: fade;
+  -ms-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: .72s;
+  -moz-animation-duration: .72s;
+  -ms-animation-duration: .72s;
+  animation-duration: .72s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  animation-direction: normal;
+  background-color: #fff;
+  border-radius: 6px;
+  clip: rect(0 0.28571429em 0.1em 0);
+  height: .1em;
+  margin-top: .5em;
+  position: absolute;
+  width: 1em;
+}
+.spinner > span:nth-child(1) {
+  -webkit-animation-delay: 0.27s;
+  -moz-animation-delay: 0.27s;
+  -ms-animation-delay: 0.27s;
+  animation-delay: 0.27s;
+  -webkit-transform: rotate(-315deg);
+  -moz-transform: rotate(-315deg);
+  -ms-transform: rotate(-315deg);
+  transform: rotate(-315deg);
+}
+.spinner > span:nth-child(2) {
+  -webkit-animation-delay: 0.36s;
+  -moz-animation-delay: 0.36s;
+  -ms-animation-delay: 0.36s;
+  animation-delay: 0.36s;
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  transform: rotate(-270deg);
+}
+.spinner > span:nth-child(3) {
+  -webkit-animation-delay: 0.45s;
+  -moz-animation-delay: 0.45s;
+  -ms-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+  -webkit-transform: rotate(-225deg);
+  -moz-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
+.spinner > span:nth-child(4) {
+  -webkit-animation-delay: 0.54s;
+  -moz-animation-delay: 0.54s;
+  -ms-animation-delay: 0.54s;
+  animation-delay: 0.54s;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.spinner > span:nth-child(5) {
+  -webkit-animation-delay: 0.63s;
+  -moz-animation-delay: 0.63s;
+  -ms-animation-delay: 0.63s;
+  animation-delay: 0.63s;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.spinner > span:nth-child(6) {
+  -webkit-animation-delay: 0.72s;
+  -moz-animation-delay: 0.72s;
+  -ms-animation-delay: 0.72s;
+  animation-delay: 0.72s;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.spinner > span:nth-child(7) {
+  -webkit-animation-delay: 0.81s;
+  -moz-animation-delay: 0.81s;
+  -ms-animation-delay: 0.81s;
+  animation-delay: 0.81s;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.spinner > span:nth-child(8) {
+  -webkit-animation-delay: 0.9;
+  -moz-animation-delay: 0.9;
+  -ms-animation-delay: 0.9;
+  animation-delay: 0.9;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+@-moz-keyframes fade {
+  0% {
+    background-color: #514943;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    background-color: #514943;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+@-ms-keyframes fade {
+  0% {
+    background-color: #514943;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+@keyframes fade {
+  0% {
+    background-color: #514943;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+form.loading .mgz__spinner {
+  display: block;
+}
+.mgz__spinner {
+  display: none;
+  position: relative;
+  width: 186px;
+  height: 20px;
+  margin: auto;
+  position: absolute;
+  left: 45%;
+  top: 15px;
+}
+.mgz__spinner .spinner-item {
+  position: absolute;
+  top: 0;
+  background-color: #d8d8d8;
+  width: 20px;
+  height: 20px;
+  animation-name: bounce_fountainG;
+  -o-animation-name: bounce_fountainG;
+  -ms-animation-name: bounce_fountainG;
+  -webkit-animation-name: bounce_fountainG;
+  -moz-animation-name: bounce_fountainG;
+  animation-duration: 0.645s;
+  -o-animation-duration: 0.645s;
+  -ms-animation-duration: 0.645s;
+  -webkit-animation-duration: 0.645s;
+  -moz-animation-duration: 0.645s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-direction: normal;
+  -o-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  transform: scale(0.3);
+  -o-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+.mgz__spinner .spinner-item.spinner-item-1 {
+  left: 0;
+  animation-delay: 0.256s;
+  -o-animation-delay: 0.256s;
+  -ms-animation-delay: 0.256s;
+  -webkit-animation-delay: 0.256s;
+  -moz-animation-delay: 0.256s;
+}
+.mgz__spinner .spinner-item.spinner-item-2 {
+  left: 20px;
+  animation-delay: 0.3225s;
+  -o-animation-delay: 0.3225s;
+  -ms-animation-delay: 0.3225s;
+  -webkit-animation-delay: 0.3225s;
+  -moz-animation-delay: 0.3225s;
+}
+.mgz__spinner .spinner-item.spinner-item-3 {
+  left: 40px;
+  animation-delay: 0.389s;
+  -o-animation-delay: 0.389s;
+  -ms-animation-delay: 0.389s;
+  -webkit-animation-delay: 0.389s;
+  -moz-animation-delay: 0.389s;
+}
+.mgz__spinner .spinner-item.spinner-item-4 {
+  left: 60px;
+  animation-delay: 0.4555s;
+  -o-animation-delay: 0.4555s;
+  -ms-animation-delay: 0.4555s;
+  -webkit-animation-delay: 0.4555s;
+  -moz-animation-delay: 0.4555s;
+}
+.mgz__spinner .spinner-item.spinner-item-5 {
+  left: 80px;
+  animation-delay: 0.522s;
+  -o-animation-delay: 0.522s;
+  -ms-animation-delay: 0.522s;
+  -webkit-animation-delay: 0.522s;
+  -moz-animation-delay: 0.522s;
+}
+.mgz__spinner .spinner-item.spinner-item-6 {
+  left: 100px;
+  animation-delay: 0.5885s;
+  -o-animation-delay: 0.5885s;
+  -ms-animation-delay: 0.5885s;
+  -webkit-animation-delay: 0.5885s;
+  -moz-animation-delay: 0.5885s;
+}
+.mgz__spinner .spinner-item.spinner-item-7 {
+  left: 120px;
+  animation-delay: 0.645s;
+  -o-animation-delay: 0.645s;
+  -ms-animation-delay: 0.645s;
+  -webkit-animation-delay: 0.645s;
+  -moz-animation-delay: 0.645s;
+}
+.mgz__spinner .spinner-item.spinner-item-8 {
+  left: 140px;
+  animation-delay: 0.7115s;
+  -o-animation-delay: 0.7115s;
+  -ms-animation-delay: 0.7115s;
+  -webkit-animation-delay: 0.7115s;
+  -moz-animation-delay: 0.7115s;
+}
+@keyframes bounce_fountainG {
+  0% {
+    transform: scale(1);
+    background-color: #d8d8d8;
+  }
+  100% {
+    transform: scale(0.3);
+    background-color: #d8d8d8;
+  }
+}
+@-o-keyframes bounce_fountainG {
+  0% {
+    -o-transform: scale(1);
+    background-color: #d8d8d8;
+  }
+  100% {
+    -o-transform: scale(0.3);
+    background-color: #d8d8d8;
+  }
+}
+@-ms-keyframes bounce_fountainG {
+  0% {
+    -ms-transform: scale(1);
+    background-color: #d8d8d8;
+  }
+  100% {
+    -ms-transform: scale(0.3);
+    background-color: #d8d8d8;
+  }
+}
+@-webkit-keyframes bounce_fountainG {
+  0% {
+    -webkit-transform: scale(1);
+    background-color: #d8d8d8;
+  }
+  100% {
+    -webkit-transform: scale(0.3);
+    background-color: #d8d8d8;
+  }
+}
+@-moz-keyframes bounce_fountainG {
+  0% {
+    -moz-transform: scale(1);
+    background-color: #d8d8d8;
+  }
+  100% {
+    -moz-transform: scale(0.3);
+    background-color: #d8d8d8;
+  }
+}
+.mgz__page-actions.page-main-actions {
+  margin: 0 0 3rem;
+  background: #f8f8f8;
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  padding: 1.5rem;
+}
+.mgz__page-actions.page-main-actions .page-actions .page-actions-buttons {
+  float: right;
+  justify-content: flex-end;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mgz__page-actions.page-main-actions .page-actions .page-actions-buttons button {
+  background-color: transparent;
+  text-shadow: none;
+  color: #41362f;
+  font-size: 1.6rem;
+  letter-spacing: .025em;
+  padding-bottom: .8875em;
+  padding-top: .8875em;
+  border-color: transparent;
+  box-shadow: none;
+  margin-left: 1.3rem;
+  font-weight: 600;
+}
+.mgz__page-actions.page-main-actions .page-actions .page-actions-buttons button.primary {
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2;
+  background-color: #eb5202;
+  border-color: #eb5202;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+.mgz__page-actions.page-main-actions .page-actions .page-actions-buttons button.primary:hover {
+  background-color: #ba4000;
+  border-color: #b84002;
+  box-shadow: 0 0 0 1px #007bdb;
+  color: #fff;
+  text-decoration: none;
+}
+.mgz__page-actions.page-main-actions .page-actions .page-actions-buttons button.action-secondary {
+  background-color: #514943;
+  border-color: #514943;
+  color: #fff;
+}
+.mgz__page-actions.page-main-actions .page-actions .page-actions-buttons button.action-secondary:hover {
+  background-color: #35302c;
+  border-color: #35302c;
+  box-shadow: 0 0 0 1px #007bdb;
+}
+.mgz__page-actions.page-main-actions .page-actions .page-actions-buttons > button.back {
+  float: left;
+  -ms-flex-order: -1;
+  -webkit-order: -1;
+  order: -1;
+  margin-left: 1.3rem;
+}
+@media (max-width: 480px) {
+  .mgz__page-actions.page-main-actions .page-actions .page-actions-buttons {
+    display: block;
+  }
+  .mgz__page-actions.page-main-actions .page-actions .page-actions-buttons button.back {
+    margin: 0;
+  }
+}
+.mgz__page-actions.page-main-actions .page-actions:before,
+.mgz__page-actions.page-main-actions .page-actions:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.mgz__page-actions.page-main-actions .page-actions #back:before {
+  content: '\e626';
+  margin-right: .5em;
+  position: relative;
+  top: 1px;
+  font-family: 'Magento-Icons';
+}
+@media (max-width: 480px) {
+  .mgz__page-actions.page-main-actions .page-actions .page-actions-buttons {
+    text-align: center;
+  }
+  .mgz__page-actions.page-main-actions .page-actions .page-actions-buttons button {
+    margin-left: 0;
+  }
+}
+.sidebar {
+  max-width: 100%;
+}

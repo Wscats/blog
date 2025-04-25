@@ -1,0 +1,218 @@
+.mgz-icon-box-wrapper {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+}
+
+.mgz-icon-box-wrapper a {
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.mgz-icon-box-wrapper a:before,
+.mgz-icon-box-wrapper a:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.mgz-icon-box-wrapper .mgz-icon-box-element {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.mgz-icon-box-size-xs {
+  width: 2.5em;
+  height: 2.5em;
+}
+.mgz-icon-box-size-xs .mgz-icon-box-element {
+  font-size: 1.2em;
+}
+.mgz-icon-box-size-sm {
+  width: 3.15em;
+  height: 3.15em;
+}
+.mgz-icon-box-size-sm .mgz-icon-box-element {
+  font-size: 1.6em;
+}
+.mgz-icon-box-size-md {
+  width: 4em;
+  height: 4em;
+}
+.mgz-icon-box-size-md .mgz-icon-box-element {
+  font-size: 2.15em;
+}
+.mgz-icon-box-size-lg {
+  width: 5em;
+  height: 5em;
+}
+.mgz-icon-box-size-lg .mgz-icon-box-element {
+  font-size: 2.85em;
+}
+.mgz-icon-box-size-xl {
+  width: 7.15em;
+  height: 7.15em;
+}
+.mgz-icon-box-size-xl .mgz-icon-box-element {
+  font-size: 5em;
+}
+
+.mgz-heading-text {
+  margin: 0;
+  color: inherit;
+  margin-bottom: 10px;
+}
+.mgz-heading-text > a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  opacity: 1;
+  font-weight: inherit;
+}
+.mgz-heading-text > a,
+.mgz-heading-text > a:focus,
+.mgz-heading-text > a:hover,
+.mgz-heading-text > a:visited {
+  border: none;
+  text-decoration: inherit;
+  color: inherit;
+  font-weight: inherit;
+}
+.mgz-heading-text > a:hover {
+  opacity: 0.85;
+}
+
+a.mgz-icon-box-btn {
+  color: #333;
+}
+.mgz-icon-box-btn:not(.primary) {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+button.mgz-icon-box-btn {
+  border: 0;
+}
+.mgz-element-icon_box .mgz-icon-box-btn {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  word-wrap: break-word;
+  text-decoration: none;
+  position: relative;
+  line-height: normal;
+  padding: 10px 20px;
+  color: #333;
+  background-color: #e3e3e3;
+  font-size: 1.4rem;
+  max-width: 100%;
+  height: auto;
+}
+.mgz-element-icon_box .mgz-icon-box-btn:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #5e5e5e;
+  background-color: #dcdcdc;
+  text-decoration: none;
+}
+.mgz-element-icon_box .mgz-icon-box-btn:focus {
+  outline: none;
+}
+.mgz-element-icon_box .mgz-btn-style-modern .mgz-icon-box-btn {
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.01) 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.01) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.01) 100%);
+  background-repeat: repeat-x;
+}
+.mgz-element-icon_box .mgz-btn-style-gradient .mgz-icon-box-btn {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  background-size: 200% 100%;
+}
+.mgz-element-icon_box .mgz-btn-style-gradient .mgz-icon-box-btn:hover {
+  background-position: 100% 0;
+}
+.mgz-element-icon_box .mgz-btn-style-3d .mgz-icon-box-btn:hover {
+  top: 2px;
+}
+.mgz-element-icon_box .mgz-btn-size-xs .mgz-icon-box-btn {
+  font-size: 11px;
+  padding: 8px 12px;
+}
+.mgz-element-icon_box .mgz-btn-size-sm .mgz-icon-box-btn {
+  font-size: 12px;
+  padding: 11px 16px;
+}
+.mgz-element-icon_box .mgz-btn-size-md .mgz-icon-box-btn {
+  font-size: 14px;
+  padding: 14px 20px;
+}
+.mgz-element-icon_box .mgz-btn-size-lg .mgz-icon-box-btn {
+  font-size: 18px;
+  padding: 18px 30px;
+}
+.mgz-element-icon_box .mgz-btn-size-xl .mgz-icon-box-btn {
+  font-size: 22px;
+  padding: 22px 35px;
+}
+
+.mgz-element-icon_box .icon-box-btn-right {
+
+}
+
+.btn-position {
+  display: inline-block;
+  width: 100%;
+}
+
+.mgz-icon-box-container {
+  display: flex;
+}
+
+.mgz-icon-box-left,
+.mgz-icon-box-right {
+  width: 30%;
+  margin: auto;
+}
+
+.mgz-description {
+  margin-bottom: 25px;
+
+}

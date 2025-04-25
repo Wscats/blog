@@ -1,0 +1,5 @@
+@media all and (min-width: 768px) {
+  html {
+    height: auto !important;
+  }
+}
