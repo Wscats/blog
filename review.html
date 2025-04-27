@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-powered automated content review</title>
+    <script type="module">
+      import { pipeline } from "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.5.0";
+
+      async function detectText() {
+        const inputText = document.getElementById("inputText").value;
+        try {
+          const classifier = await pipeline(
+            "text-classification",
+            "Xenova/distilbert-base-uncased-finetuned-sst-2-english"
+          );
+          const result = await classifier(inputText);
+          const label = result[0].label;
+          const score = result[0].score;
+          document.getElementById(
+            "result"
+          ).innerHTML = `Test results:${label} (Score:${score.toFixed(2)})`;
+        } catch (error) {
+          document.getElementById(
+            "result"
+          ).innerHTML = `Detection error:${error.message}`;
+        }
+      }
+
+      document
+        .getElementById("detectButton")
+        .addEventListener("click", detectText);
+    </script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f9;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      textarea {
+        width: 300px;
+        height: 150px;
+        padding: 10px;
+        margin: 20px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>AI-powered automated content review</h1>
+    <h2>XU Henghui、HAO Yuying、CHEN Ling、MEI Xiaoya、PENG Yufei、YAO Jialong</h2>
+    <textarea
+      id="inputText"
+      rows="10"
+      cols="50"
+      placeholder="Please enter the text to be detected"
+    ></textarea>
+    <button id="detectButton">Detection</button>
+    <div id="result"></div>
+  </body>
+</html>
