@@ -1,0 +1,22 @@
+{
+  "name": "wscats-blog",
+  "version": "2.0.0",
+  "description": "Waving wild hands in the wind, writing brilliant poems — A VitePress-powered tech blog",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "lint": "eslint docs --ext .ts,.vue",
+    "lint:fix": "eslint docs --ext .ts,.vue --fix"
+  },
+  "devDependencies": {
+    "vitepress": "^1.3.4",
+    "vue": "^3.4.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
