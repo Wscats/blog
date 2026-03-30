@@ -14,6 +14,26 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
 
+  // ─── Vite build optimizations ─────────────────────────────────────────────
+  vite: {
+    build: {
+      target: 'es2022',
+      chunkSizeWarningLimit: 500,
+      rollupOptions: {
+        output: {
+          // Separate VitePress theme from content chunks
+          manualChunks(id: string) {
+            if (id.includes('node_modules/vitepress')) return 'vitepress';
+            if (id.includes('node_modules/vue')) return 'vendor-vue';
+          },
+        },
+      },
+    },
+    optimizeDeps: {
+      include: ['vue'],
+    },
+  },
+
   themeConfig: {
     logo: '/logo.svg',
     nav: [
